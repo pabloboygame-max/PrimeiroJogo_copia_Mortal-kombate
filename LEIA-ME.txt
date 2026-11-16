@@ -1,0 +1,55 @@
+ARENA MORTAL - PODERES ESPECIAIS
+
+MENU
+- O menu principal oferece modo solo contra a CPU, modo para dois jogadores e opções.
+- A selecao de lutadores permite escolher Scorpion, Sub-Zero, Liu Kang e Raiden.
+- No modo solo, a dificuldade das opcoes altera a frequencia de decisao da CPU.
+
+COMO EXECUTAR NO VS CODE
+1. Extraia a pasta do ZIP.
+2. Abra a pasta "projeto game" no VS Code.
+3. Abra Terminal > Novo Terminal.
+4. Instale as dependencias: python -m pip install -r requirements.txt
+5. Execute: python jogo.py
+
+CONTROLES
+Jogador 1:
+  A / D = mover
+  W = pular
+  S = defender
+  J = soco
+  U = corrente / lanca de gelo / chute voador / teleporte (Raiden)
+  I = fogo / bola de gelo / bola de fogo / raio (Raiden)
+
+Jogador 2:
+  Setas esquerda/direita = mover
+  CIMA = pular
+  BAIXO = defender
+  P = soco
+  Teclado numerico 1 = corrente / lanca de gelo / chute voador / teleporte
+  Teclado numerico 2 = fogo / bola de gelo / bola de fogo / raio
+
+PODERES
+- Scorpion usa a corrente para causar dano e puxar o adversario e pode disparar fogo.
+- Sub-Zero usa uma lanca e uma bola de gelo; os acertos congelam o adversario.
+- Liu Kang usa o Chute Voador para avancar e atingir o oponente e a Bola do Dragao
+  como projeteis de fogo.
+- Raiden usa o Teleporte para surgir junto do adversario com um golpe eletrico e
+  dispara raios que atordoam o oponente.
+- Os poderes tem recarga para equilibrar a luta.
+
+MENU E OPCOES
+- Jogue solo contra a CPU ou escolha dois jogadores.
+- No modo para dois jogadores, selecione lutadores diferentes.
+- Volume controla os efeitos sonoros, F11 alterna tela cheia e dificuldade altera a CPU.
+- Use as setas ou o mouse no menu; ENTER ou clique confirma. ESC sai do menu.
+
+FERRAMENTA DE SPRITES
+- separar_sprites.py separa quadros a partir das imagens de sprites/linhas.
+- recortar_liu_kang.py recorta as animacoes de Liu Kang a partir do atlas incluido.
+- recortar_raiden.py recorta as animacoes de Raiden a partir do atlas incluido.
+- As dependencias Pillow e NumPy estao incluidas em requirements.txt.
+
+OBSERVACAO
+Os efeitos visuais sao desenhados pelo proprio Pygame. Mantenha a pasta sprites
+junto de jogo.py e menu_jogo.py.
